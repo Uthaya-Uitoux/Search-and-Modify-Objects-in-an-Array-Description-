@@ -1,0 +1,32 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contain{
+    width: 500px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 2px;
+    background: rgb(246, 118, 139);
+}
+.input_elements{
+    width:420px;
+    height: 150px;
+    text-align: center;
+    border:1px solid;
+    border-color:rgb(112, 5, 5);
+    margin:15px;
+    padding:10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.result,.input_data{
+    height:15px;
+    width:400px;
+    margin:15px;
+    font-size:10px;
+    border:1px solid;
+    text-align:center;
+    padding:10px;
+}

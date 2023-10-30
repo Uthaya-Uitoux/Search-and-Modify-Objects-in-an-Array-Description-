@@ -3,6 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+h2{
+    text-align: center;
+}
 .contain{
     width: 500px;
     border: 1px solid;
@@ -12,7 +15,7 @@
 }
 .input_elements{
     width:420px;
-    height: 150px;
+    height: 120px;
     text-align: center;
     border:1px solid;
     border-color:rgb(112, 5, 5);
@@ -29,4 +32,20 @@
     border:1px solid;
     text-align:center;
     padding:10px;
+}
+.btn{
+    display: flex;
+    gap: 8px; 
+}
+.btn button {
+    margin:10px 20px;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.btn button:hover {
+    background-color: #0056b3;
 }

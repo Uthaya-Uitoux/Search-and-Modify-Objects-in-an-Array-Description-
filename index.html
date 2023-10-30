@@ -9,12 +9,16 @@
 <body>
     <div class="container">
         <div class="contain">
+            <h2>Search and Modify Objects in an Array</h2>
         <div class="input_elements" id="element"></div>
             <div class="result" id="final_result"></div>
             <input type="text" class="input_data" id="inputData">
-            <button class="btn" onclick="findProduct()">Find object with Name</button>
             <input type="number" class="input_data" id="quantityNumber">
-            <button class="btn" onclick="quantityUpdation()">Quantity increment</button>
+            <div class="btn">
+                <button onclick="findProduct()">Find object with Name</button>
+                <button onclick="quantityUpdation()">Quantity increment</button>
+                <button onclick="totalAmount()">Total price</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

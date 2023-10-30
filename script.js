@@ -12,6 +12,7 @@ input_elements.textContent=detailedproducts;
 let input_data=document.querySelector("#inputData")
 let input_number=document.querySelector("#quantityNumber")
 
+
 function findProduct(){
     let itemName = input_data.value.toLowerCase();
     let foundProduct = product_details.find(product => product.Item.toLowerCase() === itemName);
@@ -39,4 +40,12 @@ function quantityUpdation(){
         let result = document.querySelector("#final_result");
         result.textContent = "Product not found";
     }
+}
+function totalAmount(){
+    const totalValue = product_details.reduce((total, product) => {
+        return total + (product.price * product.Quantity);
+    },0);
+    console.log(`Total Value of All Products: $${totalValue}`);
+    let result = document.querySelector("#final_result");
+        result.textContent = "The Total value of all the items is $" + totalValue;
 }

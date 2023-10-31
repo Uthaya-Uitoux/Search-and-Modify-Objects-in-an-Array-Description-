@@ -5,7 +5,7 @@ const product_details=[{Item:"Tables",price:1500,Quantity:3},
 {Item:"Paper",price:1500,Quantity:2}];
 let detailedproducts = product_details.map(Items => {
     return `Item: ${Items.Item}, Price: ${Items.price}, Quantity: ${Items.Quantity}`;
-}).join();
+}).join("");
 let input_elements=document.querySelector("#element")
 input_elements.textContent=detailedproducts;
 
@@ -24,7 +24,7 @@ function findProduct(){
         console.log("Product not found");
         let result = document.querySelector("#final_result");
         result.textContent = "Product not found";
-    }
+    }  
 }
 function quantityUpdation(){
     let itemName = input_data.value.toLowerCase();
@@ -45,7 +45,6 @@ function totalAmount(){
     const totalValue = product_details.reduce((total, product) => {
         return total + (product.price * product.Quantity);
     },0);
-    console.log(`Total Value of All Products: $${totalValue}`);
     let result = document.querySelector("#final_result");
-        result.textContent = "The Total value of all the items is $" + totalValue;
+    result.textContent = "The Total value of all the items is $" + totalValue;
 }

@@ -1,7 +1,8 @@
 .container{
     display:flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    flex-direction: column;
 }
 h2{
     text-align: center;
@@ -11,7 +12,8 @@ h2{
     border: 1px solid;
     border-color: black;
     border-radius: 2px;
-    background: rgb(246, 118, 139);
+    background: rgb(246, 118, 139);   
+    
 }
 .input_elements{
     width:420px;
